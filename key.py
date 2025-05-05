@@ -16,3 +16,16 @@ def on_release(key):
 
 with Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
+
+
+
+sudo apt update
+sudo apt install python3-pip
+sudo apt install python3-venv
+python3 -m venv myenv
+source myenv/bin/activate
+pip install pynput
+
+python3 key.py
+
+
